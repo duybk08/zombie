@@ -1,0 +1,4 @@
+<div>Title: <span><%= @book.title %></span></div>
+<div>Description: <span><%= @book.desc %></span></div>
+<div>Author: <span><%= link_to @book.author.name, @book.author %></span></div>
+<div> <%= link_to "index", books_path %> </div>
