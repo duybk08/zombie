@@ -1,0 +1,55 @@
+<div class="row header">
+
+	<div class="col-md-3 logo">
+		<div class="dashboard-stat red-intense">
+			<div class="visual">
+				<i class="fa fa-bar-chart-o"></i>
+			</div>
+			<div class="details">
+				<div class="number">
+					 1349
+				</div>
+				<div class="desc">
+					 Books Available
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-9 title">
+		<div class="dashboard-stat blue-madison">
+			<div class="visual">
+				<i class="fa fa-comments"></i>
+			</div>
+			<div class="details">
+				<div class="number">
+					 Welcome to my internal Book Storage
+				</div>
+				<div class="desc">
+					 Let's rock!
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="container">
+	<div class="tiles">
+	<% @books.each do |book| %>
+		<div class="tile bg-red-sunglo">
+			<div class="tile-body">
+				<i class="fa fa-calendar"></i>
+			</div>
+			<div class="tile-object">
+				<div class="name">
+					 <%= link_to book.title, book %>
+				</div>
+			</div>
+		</div>
+	<% end %>
+	</div>
+</div>
+<div class="row footer"></div>
+
+
+

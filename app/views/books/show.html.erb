@@ -1,4 +1,43 @@
-<div>Title: <span><%= @book.title %></span></div>
-<div>Description: <span><%= @book.desc %></span></div>
-<div>Author: <span><%= link_to @book.author.name, @book.author %></span></div>
-<div> <%= link_to "index", books_path %> </div>
+<div class="container">
+	<div class="row header">
+
+		<div class="col-md-3 logo">
+			<div class="dashboard-stat red-intense">
+				<div class="visual">
+					<i class="fa fa-bar-chart-o"></i>
+				</div>
+				<div class="details">
+					<div class="number">
+						 Home
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-9 title">
+			<div class="dashboard-stat blue-madison">
+				<div class="visual">
+					<i class="fa fa-comments"></i>
+				</div>
+				<div class="details">
+					<div class="number">
+						 <%= @book.title %>
+					</div>
+					<div class="desc">
+						 <%= @book.author.name %>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="row chest">
+		<div class="col-md-3">
+			<div class="thumbnail">
+				<img src="http://upload.wikimedia.org/wikipedia/commons/8/81/Sky_over_Washington_Monument.JPG" alt="">
+			</div>
+		</div>
+		<div class="col-md-9"></div>
+	</div>
+	<div class="row footer"></div>
+</div>

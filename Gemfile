@@ -40,3 +40,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 #mysql
 #gem 'mysql2', '~> 0.3.16'
+
+gem 'bootstrap-sass', '~> 3.1.1'
